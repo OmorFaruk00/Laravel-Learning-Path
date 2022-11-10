@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PostController;
 
 /*
 |--------------------------------------------------------------------------
@@ -41,3 +42,6 @@ Route::group(['prefix' => 'user'], function(){
     Route::get('list',[UserController::class,'index']);
 
 });
+
+
+Route::get('post',[PostController::class,'post']);
